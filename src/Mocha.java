@@ -8,5 +8,9 @@ public class Mocha extends Decorator {
         return super.Operation() + " " + addBehavior();
     }
 
+    private String addBehavior() {
+        return "Add Mocha";
+    }
+
     
 }
