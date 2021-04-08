@@ -4,4 +4,8 @@ public abstract class Decorator implements Beverage {
     Decorator(Beverage beverage) {
         this._beverage = beverage;
     }
+
+    private Beverage getBeverage() {
+        return _beverage;
+    }
 }
