@@ -7,6 +7,9 @@ public class Whip extends Decorator {
     public String Operation() {
         return super.Operation() + " " + addBehavior();
     }
+        private String addBehavior() {
+        return "Add Whip";
+    }
 
 
 }
