@@ -8,4 +8,9 @@ public abstract class Decorator implements Beverage {
     private Beverage getBeverage() {
         return _beverage;
     }
+
+    @Override
+    public String Operation() {
+        return getBeverage().Operation();
+    }
 }
