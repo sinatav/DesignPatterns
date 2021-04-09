@@ -1,7 +1,7 @@
-public class Soy extends Decorator {
+public class SteamedMilk extends Decorator {
     Beverage beverage;
 
-    public Soy(Beverage beverage) {
+    public SteamedMilk(Beverage beverage) {
         this.beverage = beverage;
     }
 
@@ -11,15 +11,14 @@ public class Soy extends Decorator {
 //    }
 
 //    private String addBehavior() {
-//        return "Add Soy";
+//        return "Add Milk";
 //    }
 
     public String getDescription() {
-        return beverage.getDescription() + " " + "with soy";
+        return beverage.getDescription() + " " + "with milk";
     }
 
     public double cost() {
-        return 0.15 + beverage.cost();
+        return 0.10 + beverage.cost();
     }
-
 }

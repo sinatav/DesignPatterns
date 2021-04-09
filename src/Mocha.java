@@ -15,7 +15,7 @@ public class Mocha extends Decorator {
 //    }
 
     public String getDescription() {
-        return beverage.getDescription() + " " + "Add mocha";
+        return beverage.getDescription() + " " + "with mocha";
     }
 
     public double cost() {
