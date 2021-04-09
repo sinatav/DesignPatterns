@@ -7,7 +7,7 @@ public class DarkRoast extends Beverage {
 //        return "DarkRoast";
 //    }
     public DarkRoast() {
-        description = "Delicious DarkRoast";
+        description = super.description + " DarkRoast";
     }
     public double cost() {
         return 0.99;

@@ -9,7 +9,7 @@ public class Espresso extends Beverage {
 //    }
 
     public Espresso() {
-        description = "Delicious Espresso";
+        description = super.description + " Espresso";
     }
     public double cost() {
         return 1.99;
