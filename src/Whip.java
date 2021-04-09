@@ -7,9 +7,13 @@ public class Whip extends Decorator {
     public String Operation() {
         return super.Operation() + " " + addBehavior();
     }
-        private String addBehavior() {
+
+    private String addBehavior() {
         return "Add Whip";
     }
 
+    public String getDescription() {
+        return super.getDescription() + " " + addBehavior();
+    }
 
 }
