@@ -1,7 +1,13 @@
+HouseBlend.java:
+
 public class HouseBlend implements Beverage {
     @Override
     public String Operation() {
-        return "Add HouseBlend";
+        return "HouseBlend";
+    }
+
+    public String getDescription() {
+        return "HouseBlend";
     }
 
 }
