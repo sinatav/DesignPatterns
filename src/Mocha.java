@@ -12,5 +12,8 @@ public class Mocha extends Decorator {
         return "Add Mocha";
     }
 
+    public String getDescription() {
+        return super.getDescription() + " " + addBehavior();
+    }
     
 }
