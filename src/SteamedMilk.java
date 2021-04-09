@@ -5,15 +5,6 @@ public class SteamedMilk extends Decorator {
         this.beverage = beverage;
     }
 
-//    @Override
-//    public String Operation() {
-//        return super.Operation() + " " + addBehavior();
-//    }
-
-//    private String addBehavior() {
-//        return "Add Milk";
-//    }
-
     public String getDescription() {
         return beverage.getDescription() + " " + "with milk";
     }

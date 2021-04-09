@@ -1,18 +1,11 @@
 public class Decaf extends Beverage {
-//    @Override
-//    public String Operation() {
-//        return "Decaf";
-//    }
-
-//    public String getDescription() {
-//        return "Decaf";
-//    }
-
     public Decaf() {
-        description = super.description + " Decaf";
+        description = getDescription();
     }
     public double cost() {
         return 1.05;
     }
-
+    public String getDescription() {
+        return "Delicious Decaf";
+    }
 }
