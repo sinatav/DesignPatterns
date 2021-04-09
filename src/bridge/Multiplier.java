@@ -1,6 +1,6 @@
 package bridge;
 
-public class Multiplier {
+public class Multiplier implements Multiply {
     private Multiply multiply;
 
     public Multiplier(Multiply multiply) {

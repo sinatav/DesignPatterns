@@ -9,8 +9,7 @@ public class Pow1 extends Power {
     public int pow(int base, int p) {
         int ans = 1;
         while (p-- > 0)
-            ans *= base;
-//            ans = multiplier.mul(ans, base);
+            ans = multiplier.mul(ans, base);
 
         return ans;
     }
