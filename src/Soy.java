@@ -1,6 +1,8 @@
 public class Soy extends Decorator {
+    Beverage beverage;
+
     public Soy(Beverage beverage) {
-        super(beverage);
+        this.beverage = beverage;
     }
 
 //    @Override
@@ -8,12 +10,16 @@ public class Soy extends Decorator {
 //        return super.Operation() + " " + addBehavior();
 //    }
 
-    private String addBehavior() {
-        return "Add Soy";
-    }
+//    private String addBehavior() {
+//        return "Add Soy";
+//    }
 
     public String getDescription() {
-        return super.getDescription() + " " + addBehavior();
+        return beverage.getDescription() + " " + "Add soy";
+    }
+
+    public double cost() {
+        return 0.15 + beverage.cost();
     }
 
 }

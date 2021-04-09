@@ -1,6 +1,8 @@
 public class Mocha extends Decorator {
+    Beverage beverage;
+
     public Mocha(Beverage beverage) {
-        super(beverage);
+        this.beverage = beverage;
     }
 
 //    @Override
@@ -8,12 +10,15 @@ public class Mocha extends Decorator {
 //        return super.Operation() + " " + addBehavior();
 //    }
 
-    private String addBehavior() {
-        return "Add Mocha";
-    }
+//    private String addBehavior() {
+//        return "Add Mocha";
+//    }
 
     public String getDescription() {
-        return super.getDescription() + " " + addBehavior();
+        return beverage.getDescription() + " " + "Add mocha";
     }
-    
+
+    public double cost() {
+        return 0.20 + beverage.cost();
+    }
 }

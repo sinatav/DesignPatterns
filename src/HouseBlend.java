@@ -4,8 +4,15 @@ public class HouseBlend extends Beverage {
 //        return "HouseBlend";
 //    }
 
-    public String getDescription() {
-        return "HouseBlend";
+//    public String getDescription() {
+//        return "HouseBlend";
+//    }
+
+    public HouseBlend() {
+        description = "HouseBlend";
+    }
+    public double cost() {
+        return 0.89;
     }
 
 }

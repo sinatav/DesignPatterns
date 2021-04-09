@@ -1,6 +1,8 @@
 public class Milk extends Decorator {
+    Beverage beverage;
+
     public Milk(Beverage beverage) {
-        super(beverage);
+        this.beverage = beverage;
     }
 
 //    @Override
@@ -8,11 +10,15 @@ public class Milk extends Decorator {
 //        return super.Operation() + " " + addBehavior();
 //    }
 
-    private String addBehavior() {
-        return "Add Milk";
-    }
+//    private String addBehavior() {
+//        return "Add Milk";
+//    }
 
     public String getDescription() {
-        return super.getDescription() + " " + addBehavior();
+        return beverage.getDescription() + " " + "Add milk";
+    }
+
+    public double cost() {
+        return 0.10 + beverage.cost();
     }
 }

@@ -1,6 +1,8 @@
 public class Whip extends Decorator {
+    Beverage beverage;
+
     public Whip(Beverage beverage) {
-        super(beverage);
+        this.beverage = beverage;
     }
 
 //    @Override
@@ -8,12 +10,16 @@ public class Whip extends Decorator {
 //        return super.Operation() + " " + addBehavior();
 //    }
 
-    private String addBehavior() {
-        return "Add Whip";
-    }
+//    private String addBehavior() {
+//        return "Add Whip";
+//    }
 
     public String getDescription() {
-        return super.getDescription() + " " + addBehavior();
+        return beverage.getDescription() + " " + "Add whip";
+    }
+
+    public double cost() {
+        return 0.10 + beverage.cost();
     }
 
 }
