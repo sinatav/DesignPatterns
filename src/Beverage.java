@@ -1,4 +1,7 @@
-public interface Beverage {
-    String Operation();
-    String getDescription();
+public abstract class Beverage {
+    String description = "Unknown";
+    public String getDescription() {
+        return description;
+    }
+//    public abstract double cost();
 }

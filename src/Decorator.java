@@ -1,4 +1,4 @@
-public abstract class Decorator implements Beverage {
+public abstract class Decorator extends Beverage {
     private Beverage _beverage;
 
     Decorator(Beverage beverage) {
@@ -9,10 +9,10 @@ public abstract class Decorator implements Beverage {
         return _beverage;
     }
 
-    @Override
-    public String Operation() {
-        return getBeverage().Operation();
-    }
+//    @Override
+//    public String Operation() {
+//        return getBeverage().Operation();
+//    }
 
     @Override
     public String getDescription() {

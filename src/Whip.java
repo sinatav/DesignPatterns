@@ -3,10 +3,10 @@ public class Whip extends Decorator {
         super(beverage);
     }
 
-    @Override
-    public String Operation() {
-        return super.Operation() + " " + addBehavior();
-    }
+//    @Override
+//    public String Operation() {
+//        return super.Operation() + " " + addBehavior();
+//    }
 
     private String addBehavior() {
         return "Add Whip";
