@@ -13,4 +13,10 @@ public abstract class Decorator implements Beverage {
     public String Operation() {
         return getBeverage().Operation();
     }
+
+    @Override
+    public String getDescription() {
+        return getBeverage().getDescription();
+    }
+
 }
